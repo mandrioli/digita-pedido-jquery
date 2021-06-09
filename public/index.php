@@ -28,14 +28,12 @@
             <div class="col-md-1 pr-0">
                 <label for="tamanho">Tamanho</label>
                 <select name="tamanho" id="tamanho" class="form-control">
-                    <option value="P">P</option>
-                    <option value="M">M</option>
-                    <option value="G">G</option>
+                    <option value="0">Selecione</option>
                 </select>
             </div>
             <div class="col-md-2 pr-0">
-                <label for="valor">Valor Und.</label>
-                <input type="text" class="form-control" name="valor" id="valor">
+                <label for="valorUnit">Valor Und.</label>
+                <input type="text" class="form-control" name="valorUnit" id="valorUnit">
             </div>
             <div class="col-md-1 pr-0">
                 <label for="qtde">Qtde</label>
@@ -47,9 +45,31 @@
         </div>
         <!--</form>-->
     </div>
-    
+
+    <div class="container my-5 p-0">
+        <form action="" id="formPedido" method="post">
+
+            <table id="tbPedido" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col" style="width: 10%">Código</th>
+                        <th scope="col" style="width: 40%">Nome</th>
+                        <th scope="col" style="width: 10%">Tamanho</th>
+                        <th scope="col" style="width: 15%">Valor Unit.</th>
+                        <th scope="col" style="width: 10%">Qtde</th>
+                        <th scope="col" style="width: 25%">#</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+
+        </form>
+    </div>
+    <div id="temp"></div>
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
     <script src="../src/app.js"></script>
 
 </body>
